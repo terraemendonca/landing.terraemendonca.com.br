@@ -616,6 +616,11 @@ section {
   transform: translateX(5px);
 }
 
+.center{
+  align-items: center;
+  justify-content: center;
+}
+
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
