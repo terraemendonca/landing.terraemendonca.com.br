@@ -1,38 +1,535 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="manifest" href="manifest.json"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Escritorio de advocacia especializado em diversos servicos juridicos. Advogados experientes prestando consultoria especializada.">
-    <meta name="keywords" content="law firm, legal services, attorneys, lawyers, legal advice, Direito, sucessorio, Planejamento, Inventario, judicial, extrajudicial, cartorio, Testamento, Doacao, bens, vida, Holding, familiar, Peticao, heranca, Habilitacao, herdeiros, Obtencao, alvara, Sobrepartilha, Remocao, inventariante, Nulidade, doacao, inoficiosa, partilha, Anulatoria, testamentos, Declaratoria, simulacao, Acao, sonegados, haveres, Processo, Advogado, especializado, Sucessao, patrimonial, hereditaria, Heranca, Planejamento, patrimonial, Partilha, Legado, familiar, Herdeiros, legitimos, testamentarios, indivisa, jacente, Inventarioario, inventario, Testamenteiro, Adjudicacao, Colacao, incapazes, Pacto, divorcio, Regime, planejamento, empresas, familiares, empresarial, Bens, litigio, Discordancia, contestada, Simplificado, arrolamento, Negativo, vacante, ausentes, Testamentario, bens, exterior, escritura, publica, procuracao, representacao, legal, legitima, colacao, partilha, amigavel, compulsoria, extrajudicial, judicial, Uniao, estavel, morte, Convivencia, falecimento, Judicial, post mortem, Relacao, estavel, obito, companheirismo, Convivencia, marital, passamento, Contestacao, Impugnar, relacao, obito, contestar, impugnacao, Negacao, invalidar, Contestacao,  processo, sucessorio, vinculo, contestar, Negacao, convivencia.">
-    <meta name="author" content="Terra e Mendonca Advocacia">
+<!DOCTYPE html>
+<html lang="en">
 
-    <meta property="og:title" content="Terra e Mendonca">
-    <meta property="og:description" content="Escritorio de advocacia especializado em diversos servicos juridicos. Advogados experientes prestando consultoria especializada">
-    <meta property="og:image" content="https://www.terraemendonca.com.br/assets/img/TerraMendoncaAdvocacia-Social-v1cmpleto-_transparente.png">
-    <meta property="og:url" content="https://www.terraemendonca.com.br/">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Terra & Mendonca Advocacia</title>
-    <link rel="stylesheet" href="./assets/css/custom_style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <section class="container" id="atuacao">
-      <h1 class="display-4 padding-top text-center">Nossa Atuação</h1>
-      <div class="row padding-top">
-        <div class="padding-top">
-          <p>
-            Na Terra & Mendonça Advocacia, somos especializados em direito sucessório e temos o orgulho de ser reconhecidos pela entrega de soluções jurídicas de alto nível às(aos) nossas(os) clientes, em todo o território nacional.<br>
-          </p>
-          <p>
-            Com grande experiência e destacada expertise nesse campo, conquistamos uma posição de destaque em demandas sucessórias. Isso se deve à nossa dedicação e alto desempenho em processos de inventário e em outras demandas, por meio da aplicação de técnicas jurídicas avançadas e habilidades na negociação, conciliação e resolução de conflitos.
-          </p>
-          <p>
-            Independentemente da complexidade da situação, nossa equipe está preparada para fornecer suporte abrangente e especializado em todos os aspectos do processo sucessório. Nossa abordagem é caracterizada pela agilidade, profissionalismo e, acima de tudo, pelo respeito às questões patrimoniais e familiares sensíveis envolvidas.
-          </p>
+  <title>Terra e Mendonca Advocacia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <nav id="navbar" class="navbar">
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Soluções jurídicas que impulsionam futuros.</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Proteja a sua herança com uma equipe de especialistas comprometidos em oferecer soluções jurídicas de alto nível.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <i class="bi bi-whatsapp" style="padding-right: 1rem;"></i><span>Falar com um especialista!</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/TerraMendoncaAdvocacia-Social-v1cmpleto-_transparente.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+    <section id="values" class="values">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <p>Um upgrade no seu planejamento sucessório</p>
+        </header>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="assets/img/values-3.png" class="img-fluid" alt="">
+              <h3>Maximize os resultados do seu inventário com uma equipe especializada em técnicas jurídicas avançadas.</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="assets/img/values-2.png" class="img-fluid" alt="">
+              <h3>Minimize a exposição a processos prolongados e custosos com soluções eficientes.</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <h3>Adicione inteligência para reduzir a carga tributária sobre a herança.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </body>
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Por  que contratar um escritório especializado em Inventários?</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+              <div data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Conhecimento profundo e experiência específica nesse campo, o que é essencial para lidar com as complexidades legais envolvidas nas questões de sucessão.</h3>
+                </div>
+              </div>
+
+              <div data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Estratégias para reduzir a carga tributária que incide sobre a herança, proporcionando economia aos herdeiros.</h3>
+                </div>
+              </div>
+
+              <div data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Equipe qualificada e especializada em direito sucessório, o que aumenta significativamente a chance de sucesso.</h3>
+                </div>
+              </div>
+
+              <div data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Equipe constantemente atualizada sobre as leis e regulamentações da área, assegurando que tudo seja feito em conformidade com os requisitos legais e com os mais recentes entendimentos do tema.</h3>
+                </div>
+              </div>
+
+              <div data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Equipe de especialistas treinados para minimizar processos prolongados e custosos.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-lg-start">
+            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <i class="bi bi-whatsapp" style="padding-right: 1rem;"></i><span>Falar com um especialista!</span>
+            </a>
+          </div>
+
+        </div> <!-- / row -->
+
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Conte conosco para . . .</h3>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1"></a>
+              </li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1">
+                <div class="d-flex tab-item align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Resolver as disputas de forma amigável, quando possível, por meio de negociação ou mediação.</h4>
+                </div>
+                <div class="d-flex tab-item align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Garantir uma partilha justa e equitativa dos bens da herança, levando em consideração os interesses das partes envolvidas.</h4>
+                </div>
+                <div class="d-flex tab-item align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Minimizar a exposição a processos prolongados e custosos, em busca de melhores resultados.</h4>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/features-2.png" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- End Feature Tabs -->
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
+
+          <div class="row">
+
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/features-3.png" class="img-fluid p-4" alt="">
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>Corporis voluptates sit</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-stack-line"></i>
+                  <div>
+                    <h4>Ullamco laboris nisi</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-brush-4-line"></i>
+                  <div>
+                    <h4>Labore consequatur</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-magic-line"></i>
+                  <div>
+                    <h4>Beatae veritatis</h4>
+                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-command-line"></i>
+                  <div>
+                    <h4>Molestiae dolor</h4>
+                    <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-radar-line"></i>
+                  <div>
+                    <h4>Explicabo consectetur</h4>
+                    <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End Feature Icons -->
+
+      </div>
+
+    </section>
+    <!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Como funcionam nossos serviços</p>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Consultoria Jurídica Especializada</h3>
+              <p>Inclui uma análise detalhada do caso e da documentação fornecida, identificação de estratégias jurídicas, avaliação de possíveis soluções e estudo de viabilidade, esclarecimento de dúvidas e, ao final, discussão da proposta de honorários.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Início do Planejamento Sucessório</h3>
+              <p>Após a concordância quanto às estratégias jurídicas, iniciaremos as providências do caso. Isso inclui a elaboração de instrumentos de planejamento sucessório, como testamento, providências relacionadas à doação de bens com cláusulas específicas, formulação e alteração de contrato social/estatuto e acordo de sócios da holding familiar, pedido de imunidade tributária de ITBI, entre outras medidas. Este passo marca o início das ações concretas para o planejamento sucessório, conforme as necessidades específicas de cada cliente.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Continuidade do Planejamento Sucessório</h3>
+              <p>O planejamento sucessório é um processo contínuo. Após a execução de todas as ações necessárias para o planejamento inicialmente desenhado, algumas medidas adicionais podem ser necessárias. Isso pode incluir a realização de novas doações de bens, a elaboração de um novo testamento, alterações no contrato social ou estatuto da holding familiar, ajuizamento de ações contra negativas de imunidade tributária, entre outras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Perguntas Frequentes</p>
+        </header>
+
+        <div class="row">
+          <div>
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Quais são os principais serviços oferecidos pelo nosso escritório?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Oferecemos uma ampla gama de serviços relacionados a estratégias de planejamento sucessório, incluindo a constituição de holdings familiares, doação de bens em vida, elaboração de testamentos, entre outras.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Por que é importante fazer um planejamento sucessório?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    O planejamento sucessório é essencial para garantir a segurança e a estabilidade do patrimônio familiar, prevenir conflitos entre futuros herdeiros, reduzir custos com impostos e assegurar que as vontades da(o) cliente sejam respeitadas após o seu falecimento.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    O que é uma holding familiar?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    A Holding familiar representa uma estrutura societária inovadora criada com o objetivo de transferir os bens da esfera pessoal para uma pessoa jurídica (PJ). Ela torna-se responsável por administrar e gerir o patrimônio familiar, que pode incluir bens imóveis, participação em outras empresas, investimentos e outros ativos, visando a proteção patrimonial desses recursos. Formar uma holding familiar pode ser uma estratégia bastante eficaz para garantir a proteção patrimonial de uma família. 
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    Quais são os benefícios de constituir uma holding familiar?
+                  </button>
+                </h2>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    São diversas as vantagens que essa estrutura oferece, quando legalmente constituída e bem estruturada, proporcionando não apenas blindagem patrimonial, mas também estabilidade e planejamento para futuras gerações, e economia tributária, em muitos casos.                   </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    A holding familiar é a melhor solução?
+                  </button>
+                </h2>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    A holding familiar não é uma solução universal para todas as pessoas ou famílias, pois há custos significativos envolvidos. Além disso, optar pela holding familiar não exclui a possibilidade de complementar o planejamento sucessório com outras estratégias e instrumentos, conforme a necessidade de cada caso. Não existe uma solução única que atenda a todas(os). Cada situação requer uma análise cuidadosa e personalizada.                   </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    Quanto de patrimônio é necessário para ter uma holding familiar?
+                  </button>
+                </h2>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Não há um valor específico de patrimônio que seja adequado para constituir uma holding familiar, pois isso dependerá também da natureza do patrimônio, das metas para esses bens, da estabilidade familiar, entre outros fatores. Em geral, devido aos custos envolvidos, a formação de uma holding torna-se mais interessante financeiramente quando o patrimônio a ser integralizado ultrapassa os 5 milhões de reais. De toda forma, essa análise deve ser feita individualmente para cada caso.                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                    A Holding Familiar substitui o inventário?
+                  </button>
+                </h2>
+                <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    A holding familiar evita o inventário, desde que todos os bens da(o) falecida(o) estejam na holding e desde que todas as suas cotas ou ações da holding familiar tenham sido transferidas em vida para suas(seus) futuras(os) herdeiras(os). Caso contrário, será necessário o inventário e a holding integrará o patrimônio a ser partilhado.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
+                    Qual o valor dos nossos serviços?
+                  </button>
+                </h2>
+                <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    O valor dos nossos serviços advocatícios são ajustados de acordo com a complexidade do caso e as necessidades específicas de cada caso. Para uma avaliação detalhada e uma proposta de honorários personalizada, agende uma consulta com nossa equipe de especialistas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+                    Quem pode contratar os nossos serviços?
+                  </button>
+                </h2>
+                <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Qualquer pessoa envolvida em questões relacionadas ao planejamento sucessório pode contratar nossos serviços. Atendemos clientes em todo o território nacional, independentemente do estado onde se encontram.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+                    Como posso agendar uma consulta e obter mais informações?
+                  </button>
+                </h2>
+                <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Você pode entrar em contato conosco pelos números de telefone, WhatsApp ou e-mail fornecidos em nossa página de contato. Estamos à disposição para esclarecer suas dúvidas e ajudá-la(o) a encontrar a melhor solução para suas necessidades na área de Planejamento Sucessório e Direito das Sucessões.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Contatos</p>
+        </header>
+
+        <div class="row gy-4">
+          <div>
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Endereço</h3>
+                  <p>SHS Quadra 6, Bloco A, Sala 501, Complexo Brasil 21, Brasília/DF</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Telefones</h3>
+                  <p>
+                    (61) 2193-1277<br>
+                    (61) 99251-3418
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>contato@terraemendonca.com.br</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Funcionamento</h3>
+                  <p>Segunda à Sexta<br>9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong><span>Terra & Mendonca</span></strong>.
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
