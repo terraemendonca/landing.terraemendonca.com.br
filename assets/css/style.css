@@ -892,37 +892,37 @@ section {
 }
 
 .services .service-box.blue {
-  border-bottom: 3px solid #2db6fa;
+  border-bottom: 3px solid #ffd000;
 }
 
 .services .service-box.blue .icon {
-  color: #2db6fa;
+  color: #ffd000;
   background: #dbf3fe;
 }
 
 .services .service-box.blue .read-more {
-  color: #2db6fa;
+  color: #ffd000;
 }
 
 .services .service-box.blue:hover {
-  background: #2db6fa;
+  background: #ffd000;
 }
 
 .services .service-box.orange {
-  border-bottom: 3px solid #f68c09;
+  border-bottom: 3px solid #ffd000;
 }
 
 .services .service-box.orange .icon {
-  color: #f68c09;
+  color: #000000;
   background: #fde3c4;
 }
 
 .services .service-box.orange .read-more {
-  color: #f68c09;
+  color: #ffd000;
 }
 
 .services .service-box.orange:hover {
-  background: #f68c09;
+  background: #ffd000;
 }
 
 .services .service-box.green {
