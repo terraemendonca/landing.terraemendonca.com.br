@@ -5,6 +5,25 @@
   scroll-behavior: smooth;
 }
 
+.float{
+	position:fixed;
+	width:48px;
+	height:48px;
+	bottom:40px;
+	right:60px;
+	background-color:#25d366 !important;
+	color:#FFF !important;
+	border-radius:50px;
+	text-align:center;
+  font-size:32px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
