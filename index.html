@@ -36,28 +36,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16970087368"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16970087368');
-  </script>
-
-  <!-- Event snippet for whatsapp conversion page -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      document.addEventListener("click", function (e) {
-        e.composedPath().forEach(function (e) {
-          if (e.hostname == 'wa.me' || e.hostname == 'web.whatsapp.com' || e.hostname == 'api.whatsapp.com' || e.hostname == 'wa.link') {
-            gtag('event', 'conversion', {'send_to': 'AW-16970087368/ssn_CIG_irkaEMj3-5s_'});
-          }
-        })
-      });
-    })
-  </script>
 </head>
 
 <body>
